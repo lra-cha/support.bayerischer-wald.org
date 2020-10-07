@@ -32,18 +32,10 @@
                 <div class="mb-3">
                     <div class="d-block my-3 text-left">
                         <div class="custom-control custom-radio">
-                            <input id="person17" name="reason" type="radio" class="custom-control-input">
-                            <label class="custom-control-label" for="person17"><b>Personenbezogene Daten:</b> Recht auf Löschung, Art. 17 DSGVO</label>
+                            <input id="person" name="reason" type="radio" class="custom-control-input">
+                            <label class="custom-control-label" for="person17"><b>Personenbezogene Daten:</b> Recht auf Löschung oder Berichtigung</label>
                         </div>
-                        <div class="custom-control custom-radio">
-                            <input id="person16" name="reason" type="radio" class="custom-control-input">
-                            <label class="custom-control-label" for="person16"><b>Personenbezogene Daten:</b> Recht auf Berichtigung, Art. 16 DSGVO</label>
-                        </div>
-                        <div class="custom-control custom-radio">
-                            <input id="person18" name="reason" type="radio" class="custom-control-input" >
-                            <label class="custom-control-label" for="person18"><b>Personenbezogene Daten:</b> Recht auf Einschränkung der Verarbeitung, Art. 18 DSGVO</label>
-                        </div>
-                        <div class="custom-control custom-radio">
+                         <div class="custom-control custom-radio">
                             <input id="copyright" name="reason" type="radio" class="custom-control-input">
                             <label class="custom-control-label" for="copyright"><b>Problem in Bezug auf geistiges Eigentum:</b> Verletzung oder Umgehung des Urheberrechts</label>
                         </div>
@@ -70,7 +62,7 @@
                     <input type="email" class="form-control" id="email" placeholder="name@mail.com">
                 </div>
 
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Medlung abschicken</button>
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Meldung abschicken</button>
             </form>
         </div>
     </div>

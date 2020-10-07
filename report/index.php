@@ -18,7 +18,7 @@
     <div class="row">
 
         <div class="col-12 text-left">
-            <h4 class="mb-3">Meldung</h4>
+            <h4 class="mb-3  text-center">Meldung</h4>
             <form >
                     <div class="form-group text-left">
                         <label for="txt_element">Welcher Eintrag soll entfernt werden?</label>

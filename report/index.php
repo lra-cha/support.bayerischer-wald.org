@@ -32,15 +32,15 @@
                 <div class="mb-3">
                     <div class="d-block my-3 text-left">
                         <div class="custom-control custom-radio">
-                            <input id="person" name="reason" type="radio" class="custom-control-input form_val">
+                            <input id="person" name="reason" type="radio" class="custom-control-input form_check_val">
                             <label class="custom-control-label" for="person17"><b>Personenbezogene Daten:</b> Recht auf Löschung oder Berichtigung</label>
                         </div>
                          <div class="custom-control custom-radio">
-                            <input id="copyright" name="reason" type="radio" class="custom-control-input form_val">
+                            <input id="copyright" name="reason" type="radio" class="custom-control-input form_check_val">
                             <label class="custom-control-label" for="copyright"><b>Problem in Bezug auf geistiges Eigentum:</b> Verletzung oder Umgehung des Urheberrechts</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input id="other" name="reason" type="radio" class="custom-control-input form_val">
+                            <input id="other" name="reason" type="radio" class="custom-control-input form_check_val">
                             <label class="custom-control-label" for="other"><b>Anderes rechtliches Problem:</b> Inhalte aus einem anderen rechtlichen Grund melden</label>
                         </div>
                     </div>
@@ -90,6 +90,10 @@
             $('.form_val').each(function() {
                 form_data.append($( this ).attr('id'), $( this ).val());
             });
+            $('.form_check_val').each(function() {
+                form_data.append($( this ).attr('id'), $( this ).prop("checked"));
+            });
+
             $.ajax({
                 url: '/ajax/index.php', // point to server-side PHP script
                 dataType: 'text',  // what to expect back from the PHP script, if anything

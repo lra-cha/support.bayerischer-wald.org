@@ -12,7 +12,7 @@
     <div class="py-5 text-center">
         <img class="d-block mx-auto mb-4" src="../img/logo.svg" alt="" width="157" height="142">
         <h2>Entfernen von Inhalten</h2>
-        <p class="lead">Auf dieser Seite finden Sie Hinweise dazu, wo Sie Inhalte melden können, die Sie gemäß geltendem Recht aus unseren Diensten entfernen lassen möchten. Um Ihre Anfrage umfassend bearbeiten zu können möchten wir Sie bitten vollständige und ausführliche Angaben zum Sachverhalt zu machen.</p>
+        <p class="lead">Auf dieser Seite haben Sie die Möglichkeit Inhalte zu melden, die Sie gemäß geltendem Recht aus unseren Seiten entfernen lassen möchten. Um Ihre Anfrage umfassend bearbeiten zu können möchten wir Sie bitten vollständige und ausführliche Angaben zum Sachverhalt zu machen.</p>
     </div>
 
     <div class="row">
@@ -20,7 +20,6 @@
         <div class="col-12">
             <h4 class="mb-3">Meldung</h4>
             <form >
-                <div class="row">
                     <div class="form-group">
                         <label for="txt_element">Welcher Eintrag soll entfernt werden?</label>
                         <textarea class="form-control" id="txt_element" rows="3"></textarea>
@@ -28,31 +27,47 @@
                             Bitte genau Beschreibung (Link zum Eintrag, Terminal, Titel des Eintrags)
                         </small>
                     </div>
-                </div>
+
 
                 <div class="mb-3">
-                    <div class="d-block my-3">
+                    <div class="d-block my-3 text-left">
                         <div class="custom-control custom-radio">
-                            <input id="person17" name="reason" type="radio" class="custom-control-input" checked="" required="">
+                            <input id="person17" name="reason" type="radio" class="custom-control-input">
                             <label class="custom-control-label" for="person17"><b>Personenbezogene Daten:</b> Recht auf Löschung, Art. 17 DSGVO</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input id="person16" name="reason" type="radio" class="custom-control-input" checked="" required="">
+                            <input id="person16" name="reason" type="radio" class="custom-control-input">
                             <label class="custom-control-label" for="person16"><b>Personenbezogene Daten:</b> Recht auf Berichtigung, Art. 16 DSGVO</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input id="person18" name="reason" type="radio" class="custom-control-input" checked="" required="">
+                            <input id="person18" name="reason" type="radio" class="custom-control-input" >
                             <label class="custom-control-label" for="person18"><b>Personenbezogene Daten:</b> Recht auf Einschränkung der Verarbeitung, Art. 18 DSGVO</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input id="copyright" name="reason" type="radio" class="custom-control-input" required="">
+                            <input id="copyright" name="reason" type="radio" class="custom-control-input">
                             <label class="custom-control-label" for="copyright"><b>Problem in Bezug auf geistiges Eigentum:</b> Verletzung oder Umgehung des Urheberrechts</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input id="other" name="reason" type="radio" class="custom-control-input" required="">
+                            <input id="other" name="reason" type="radio" class="custom-control-input">
                             <label class="custom-control-label" for="other"><b>Anderes rechtliches Problem:</b> Inhalte aus einem anderen rechtlichen Grund melden</label>
                         </div>
                     </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="firstName">Vorname</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" >
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="lastName">Nachname</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@mail.com">
                 </div>
 
                 <button class="btn btn-primary btn-lg btn-block" type="submit">Medlung abschicken</button>

@@ -5,12 +5,12 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="robots" content="index, follow">
     <title>Support</title>
-    <link href="libs/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../libs/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="text-center">
-<div class="container shadow p-3 mb-5 bg-white  rounded-0">
+<div class="container shadow p-3 bg-white  rounded-0">
     <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+        <img class="d-block mx-auto mb-4" src="../img/logo.svg" alt="" width="157" height="142">
         <h2>Entfernen von Inhalten</h2>
         <p class="lead">Auf dieser Seite finden Sie Hinweise dazu, wo Sie Inhalte melden können, die Sie gemäß geltendem Recht aus unseren Diensten entfernen lassen möchten. Um Ihre Anfrage umfassend bearbeiten zu können möchten wir Sie bitten vollständige und ausführliche Angaben zum Sachverhalt zu machen.</p>
     </div>
@@ -224,8 +224,8 @@
         </footer>
 
     </div>
-    <script src="libs/js/jquery-3.5.1.min.js"></script>
-    <script src="libs/js/bootstrap.bundle.js"></script>
+    <script src="../libs/js/jquery-3.5.1.min.js"></script>
+    <script src="../libs/js/bootstrap.bundle.js"></script>
     <script>
 
         // nach pageload ausführen

@@ -17,10 +17,10 @@
 
     <div class="row">
 
-        <div class="col-12">
+        <div class="col-12 text-left">
             <h4 class="mb-3">Meldung</h4>
             <form >
-                    <div class="form-group">
+                    <div class="form-group text-left">
                         <label for="txt_element">Welcher Eintrag soll entfernt werden?</label>
                         <textarea class="form-control" id="txt_element" rows="3"></textarea>
                         <small id="txt_elementHelpBlock" class="form-text text-muted">

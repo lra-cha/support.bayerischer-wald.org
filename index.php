@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="/favicon.ico">
     <meta name="robots" content="index, follow">
-    <title>Verfügbarkeitscheck</title>
+    <title>Support</title>
     <link href="libs/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="text-center">
-<div class="container">
+<div class="container shadow p-3 mb-5 bg-white  rounded-0">
     <div class="py-5 text-center">
         <img class="d-block mx-auto mb-4" src="/docs/4.5/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-        <h2>Checkout form</h2>
-        <p class="lead">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+        <h2>Entfernen von Inhalten</h2>
+        <p class="lead">Auf dieser Seite finden Sie Hinweise dazu, wo Sie Inhalte melden können, die Sie gemäß geltendem Recht aus unseren Diensten entfernen lassen möchten. Um Ihre Anfrage umfassend bearbeiten zu können möchten wir Sie bitten vollständige und ausführliche Angaben zum Sachverhalt zu machen.</p>
     </div>
 
     <div class="row">

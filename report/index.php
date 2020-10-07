@@ -28,7 +28,7 @@
                         </small>
                     </div>
 
-
+                <h5 class="mb-3">Begründung</h5>
                 <div class="mb-3">
                     <div class="d-block my-3 text-left">
                         <div class="custom-control custom-radio">
@@ -46,7 +46,7 @@
                     </div>
                 </div>
 
-
+                <h5 class="mb-3">Kontaktdaten</h5>
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="firstName">Vorname</label>

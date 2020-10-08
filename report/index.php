@@ -33,7 +33,7 @@
                     <div class="d-block my-3 text-left">
                         <div class="custom-control custom-radio">
                             <input id="person" name="reason" type="radio" class="custom-control-input form_check_val">
-                            <label class="custom-control-label" for="person17"><b>Personenbezogene Daten:</b> Recht auf Löschung oder Berichtigung</label>
+                            <label class="custom-control-label" for="person"><b>Personenbezogene Daten:</b> Recht auf Löschung oder Berichtigung</label>
                         </div>
                          <div class="custom-control custom-radio">
                             <input id="copyright" name="reason" type="radio" class="custom-control-input form_check_val">

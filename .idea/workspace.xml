@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7e7f0ad2-81a4-4d42-865c-f68a0360a516" name="Default Changelist" comment="Formular">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/report/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602072231115</updated>
-      <workItem from="1602072232236" duration="6418000" />
+      <workItem from="1602072232236" duration="6677000" />
+      <workItem from="1602146838445" duration="2108000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1602073050767</created>
@@ -146,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602079999326</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="changes changes everywhere">
+      <created>1602080487041</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1602080487041</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +170,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -172,9 +181,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="changes changes everywhere" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="512" y="248" key="Vcs.Push.Dialog.v2" timestamp="1602080000808">
+    <state x="512" y="248" key="Vcs.Push.Dialog.v2" timestamp="1602080488313">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="512" y="248" key="Vcs.Push.Dialog.v2/1920.0.1920.1160/0.0.1920.1160@0.0.1920.1160" timestamp="1602080000808" />
+    <state x="512" y="248" key="Vcs.Push.Dialog.v2/1920.0.1920.1160/0.0.1920.1160@0.0.1920.1160" timestamp="1602080488313" />
   </component>
 </project>

@@ -7,7 +7,7 @@ if (!(isset($_POST['txt_element'])&&isset($_POST['email'])))
 }
 
 // Datenbank verbinden
-$mysqli = mysqli_connect("localhost", "di_check", "di_check", "di_check");
+$mysqli = mysqli_connect("localhost", "support_db", "support_db", "support");
 if (mysqli_connect_errno()) {
     echo "Fehler beim Speichern";
 }
@@ -16,7 +16,7 @@ else {
     $other=(($_POST['other']==='true') ? 1 : 0);
     $person=(($_POST['person']==='true') ? 1 : 0);
     $copoyright=(($_POST['copyright']==='true') ? 1 : 0);
-    $stmt = $mysqli->prepare("INSERT INTO `settings` (`txt_element`, `firstName`, `lastName`,`email`, `person`, `copyright`,`other`,`ip`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt = $mysqli->prepare("INSERT INTO `abuse` (`txt_element`, `firstName`, `lastName`,`email`, `person`, `copyright`,`other`,`ip`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("ssssiiis",
         $_POST['txt_element'],
         $_POST['firstName'],

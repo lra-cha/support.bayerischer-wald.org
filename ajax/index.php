@@ -38,13 +38,13 @@ else {
 
     $mysqli->close();
     $reason = '';
-    if ($_POST['other']==='true') {
+    if ($_POST['person']==='true') {
         $reason = 'Personenbezogene Daten';
     }
-    if ($_POST['person']==='true') {
+    if ($_POST['copyright']==='true') {
         $reason = 'Problem in Bezug auf geistiges Eigentum';
     }
-    if ($_POST['copyright']==='true') {
+    if ($_POST['other']==='true') {
         $reason = 'Anderes rechtliches Problem';
     }
 
@@ -55,10 +55,10 @@ else {
     $email->SetFrom('info@bayerischer-wald.org', 'Bayerischer Wald org'); //Name is optional
     $email->Subject   = 'Neue Meldung bezüglich Entfernung von Inhalten';
     $email->Body      = 'Hallo, <br/>es ist eine neue Meldung bezüglich dem Entfernen von Inhalten eingetroffen <br/>'.
-        '<b>Grund der Meldung: </b>'.$reason.
+        '<b>Grund der Meldung: </b>'.$reason.'</br>'.
         '<b>Inhalt der Meldung</b>'.
         '<p>'.$_POST['txt_element'].'</p>'.
-        '<b>Vorname: </b>'.$_POST['firstName'].'<b>Nachname: </b>'.$_POST['lastName'].'<br/>'.
+        '<b>Vorname: </b>'.$_POST['firstName'].'<b> Nachname: </b>'.$_POST['lastName'].'<br/>'.
         '<b>eMail: </b>'.$_POST['email'];
     $email->AddAddress( $empfaenger );
     $email->Send();

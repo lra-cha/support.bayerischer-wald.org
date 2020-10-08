@@ -13,15 +13,18 @@ if (mysqli_connect_errno()) {
 }
 else {
     // Settings schreiben
+    $other=(($_POST['other']==='true') ? 1 : 0);
+    $person=(($_POST['person']==='true') ? 1 : 0);
+    $copoyright=(($_POST['copyright']==='true') ? 1 : 0);
     $stmt = $mysqli->prepare("INSERT INTO `settings` (`txt_element`, `firstName`, `lastName`,`email`, `person`, `copyright`,`other`,`ip`) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("ssssiiis",
         $_POST['txt_element'],
         $_POST['firstName'],
         $_POST['lastName'],
         $_POST['email'],
-        (($_POST['person']==='true') ? 1 : 0),
-        (($_POST['copyright']==='true') ? 1 : 0),
-        (($_POST['other']==='true') ? 1 : 0),
+        $person,
+        $copoyright,
+        $other,
         $_SERVER['REMOTE_ADDR']);
     $stmt->execute();
     if($stmt->affected_rows < 1) {

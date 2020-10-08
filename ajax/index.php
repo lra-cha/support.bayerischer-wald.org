@@ -1,5 +1,6 @@
 <?php
-
+use PHPMailer\PHPMailer\PHPMailer;
+require '../vendor/autoload.php';
 if (!(isset($_POST['txt_element'])&&isset($_POST['email'])))
 {
     echo 'Bitte alle Pflichtfelder ausfüllen';
@@ -36,4 +37,29 @@ else {
     echo "Ihre Anfrage wurde unter der ID: $id gespeichert!";
 
     $mysqli->close();
+    $reason = '';
+    if ($_POST['other']==='true') {
+        $reason = 'Personenbezogene Daten';
+    }
+    if ($_POST['person']==='true') {
+        $reason = 'Problem in Bezug auf geistiges Eigentum';
+    }
+    if ($_POST['copyright']==='true') {
+        $reason = 'Anderes rechtliches Problem';
+    }
+
+    $empfaenger = 'tourist@lra.landkreis-cham.de';
+    $email = new PHPMailer();
+    $email->CharSet = 'utf-8';
+    $email->isHTML(true);
+    $email->SetFrom('info@bayerischer-wald.org', 'Bayerischer Wald org'); //Name is optional
+    $email->Subject   = 'Neue Meldung bezüglich Entfernung von Inhalten';
+    $email->Body      = 'Hallo, <br/>es ist eine neue Meldung bezüglich dem Entfernen von Inhalten eingetroffen <br/>'.
+        '<b>Grund der Meldung: </b>'.$reason.
+        '<b>Inhalt der Meldung</b>'.
+        '<p>'.$_POST['txt_element'].'</p>'.
+        '<b>Vorname: </b>'.$_POST['firstName'].'<b>Nachname: </b>'.$_POST['lastName'].'<br/>'.
+        '<b>eMail: </b>'.$_POST['email'];
+    $email->AddAddress( $empfaenger );
+    $email->Send();
 }

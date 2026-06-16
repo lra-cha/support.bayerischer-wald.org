@@ -25,7 +25,7 @@
            <img src="/pfad/zum/logo.svg" alt="Firmenname" class="logo">
         ================================================================= */
         .logo {
-            max-height: 120px; width: auto;
+            max-height: 180px; width: auto;
             /*width: 120px; height: 48px;*/
             /*border: 1px dashed var(--line);*/
             /*border-radius: 6px;*/

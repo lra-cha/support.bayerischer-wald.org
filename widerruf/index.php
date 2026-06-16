@@ -323,8 +323,7 @@ $token = csrf_token();
 <div class="wrap">
 
     <header class="brand">
-        <!-- LOGO: Platzhalter ersetzen (siehe CSS-Kommentar oben) -->
-        <div class="logo-placeholder">Logo</div>
+      <img src="./bw_marke_nobw.png" alt="Logo Naturpark Oberer Bayerischer Wald" class="logo">
     </header>
 
     <div class="card">

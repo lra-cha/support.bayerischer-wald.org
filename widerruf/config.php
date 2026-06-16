@@ -15,15 +15,15 @@ return [
         'port'    => 3306,
         'name'    => 'widerruf',
         'user'    => 'widerruf_user',
-        'pass'    => 'BITTE_AENDERN',
+        'pass'    => 'H8u_dcN~gZmtxh07',
         'charset' => 'utf8mb4',
     ],
 
     // ---- Anbieterdaten (für E-Mail-Texte) ------------------------------
     'company' => [
-        'name'    => 'Musterfirma GmbH',
-        'address' => 'Musterstraße 1, 93413 Cham',
-        'email'   => 'info@example.com',   // Absender der Bestätigungsmail
+        'name'    => 'Tourist-Information Naturpark Oberer Bayerischer Wald',
+        'address' => 'Rachelstraße 6, 93413 Cham',
+        'email'   => 'info@bayerischer-wald.org',   // Absender der Bestätigungsmail
     ],
 
     // ---- Mailversand ---------------------------------------------------
@@ -31,11 +31,11 @@ return [
     // (SPF/DKIM!). Für zuverlässige Zustellung besser PHPMailer + SMTP –
     // siehe Kommentar in mailer.php.
     'mail' => [
-        'from_name'        => 'Musterfirma GmbH',
-        'from_email'       => 'no-reply@example.com',
+        'from_name'        => 'Tourist-Information Naturpark Oberer Bayerischer Wald',
+        'from_email'       => 'no-reply@bayerischer-wald.org',
         // Kopie an den Anbieter, damit der eingehende Widerruf intern
         // bearbeitet werden kann. Leer lassen, wenn nicht gewünscht.
-        'notify_operator'  => 'widerruf@example.com',
+        'notify_operator'  => 'info@bayerischer-wald.org',
     ],
 
     // ---- Spamschutz (alles serverseitig, kein sichtbares Captcha) ------

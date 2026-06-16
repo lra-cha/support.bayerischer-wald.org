@@ -442,7 +442,8 @@ $token = csrf_token();
     </div>
 
     <footer>
-        Widerrufsfunktion gemäß § 356a BGB
+        Widerrufsfunktion gemäß § 356a BGB<br/>
+        <a href="https://www.bayerischer-wald.org/impressum/" target="_blank"><strong>Impressum</strong></a> | <a href="https://www.bayerischer-wald.org/datenschutz/" target="_blank"><strong>Datenschutzerklärung</strong></a>
     </footer>
 </div>
 </body>

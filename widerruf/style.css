@@ -24,12 +24,13 @@
            Ersetze den Platzhalter unten durch z. B.:
            <img src="/pfad/zum/logo.svg" alt="Firmenname" class="logo">
         ================================================================= */
-        .logo-placeholder {
-            width: 120px; height: 48px;
-            border: 1px dashed var(--line);
-            border-radius: 6px;
+        .logo {
+            max-height: 120px; width: auto;
+            /*width: 120px; height: 48px;*/
+            /*border: 1px dashed var(--line);*/
+            /*border-radius: 6px;*/
             display: flex; align-items: center; justify-content: center;
-            color: var(--muted); font-size: 12px;
+            /*color: var(--muted); font-size: 12px;*/
         }
         .card {
             background: var(--card);
